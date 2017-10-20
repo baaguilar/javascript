@@ -40,6 +40,7 @@
         <h2>Some functions</h2>
         <div id="test">Test 2</div>
         <div id="click">Click</div>
+        <div id="testing">Testing 23</div>
         <div id="hover">Hover & Toggle</div>
         <div id="animate">Animate</div>
         <div id="console">Console Log</div>
@@ -159,6 +160,9 @@
                 $(this).remove(); // this refers to the new div  
             });
             
+            $("#testing").on("click",function(){
+               alert("yep"); 
+
             $("#test").on("click", function(){
                 alert($);
             });
