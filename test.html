@@ -39,6 +39,7 @@
         
         <h2>Some functions</h2>
         <div id="click">Click</div>
+        <div id="testing">Testing 23</div>
         <div id="hover">Hover & Toggle</div>
         <div id="animate">Animate</div>
         <div id="console">Console Log</div>
@@ -156,6 +157,10 @@
             // we specify the "document" parent element of the new div in advance
             $(document).on("click", ".new", function(){
                 $(this).remove(); // this refers to the new div  
+            });
+            
+            $("#testing").on("click",function(){
+               alert("yep"); 
             });
             
         });
